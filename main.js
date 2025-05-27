@@ -10,4 +10,10 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 let chilometri = Number(prompt("quanti chilometri deve percorrere?"));
 let age = Number(prompt("inserisca la sua età per avere uno sconto"));
 
-console.log(chilometri, age);
+// prezzo costante in base ai chilometri
+
+const prezzoAlKm = 0.21;
+
+// prezzo base
+
+let prezzoBase = chilometri * prezzoAlKm;
