@@ -17,3 +17,14 @@ const prezzoAlKm = 0.21;
 // prezzo base
 
 let prezzoBase = chilometri * prezzoAlKm;
+let prezzoFinale;
+
+//condizioni per gli sconti
+
+//sconto minorenni
+
+if (age < 18) {
+  prezzoFinale = prezzoBase * 0.8;
+  console.log("sconto minorenni applicato");
+  console.log(prezzoFinale.toFixed(2));
+}
