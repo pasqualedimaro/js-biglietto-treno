@@ -28,3 +28,10 @@ if (age < 18) {
   console.log("sconto minorenni applicato");
   console.log(prezzoFinale.toFixed(2));
 }
+
+// sconto over 65
+else if (age > 65) {
+  prezzoFinale = prezzoBase * 0.6;
+  console.log("sconto over 65 applicato");
+  console.log(prezzoFinale.toFixed(2));
+}
